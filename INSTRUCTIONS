@@ -1,7 +1,7 @@
 Fauux Neocities inspired pink Serial Experiments Lain Experiments for River on Wayland - vivuccia 
 
 Before installation, make sure you have the following packages and their dependencies:
-waybar, river, foot, rofi, swaybg
+waybar, river, foot, rofi, swaybg, FontAwesome
 
 OPTIONAL: grimshot 
 
@@ -9,9 +9,10 @@ If not, install using your package manager of choice.
 
 INSTALLATION: 
 
-Install font BlockZone and refresh font cache.
+Install fonts BlockZone and FontAwesome and refresh font cache.
 Copy, symlink, or mix and match parts of the rice according to your own needs.
 I assume basic proficiency. The provided install.sh will install my setup as-is (NOTE THAT IT WILL FORCE THE SYMLINKS! YOU WILL LOSE ANY PREVIOUS CONFIGURATION FILES - MUST BACK UP IF YOU ARE GOING TO USE THE SCRIPT), as this is a personal project and it is intended to make my own installation more convenient. If you want to adapt this rice for your own needs, install manually using the provided files, and do as you wish. Proceed at your own caution.
+If install.sh is not executable, run "chmod +x install.sh" to make it executable.
 
 Paths:
 init --> ~/.config/river/init 
