@@ -1,0 +1,26 @@
+Fauux Neocities inspired pink Serial Experiments Lain Experiments for River on Wayland - vivuccia 
+
+Before installation, make sure you have the following packages and their dependencies:
+waybar, river, foot, rofi, swaybg
+
+OPTIONAL: grimshot 
+
+If not, install using your package manager of choice. 
+
+INSTALLATION: 
+
+Install font BlockZone and refresh font cache.
+Copy, symlink, or mix and match parts of the rice according to your own needs.
+I assume basic proficiency. The provided install.sh will install my setup as-is (NOTE THAT IT WILL FORCE THE SYMLINKS! YOU WILL LOSE ANY PREVIOUS CONFIGURATION FILES - MUST BACK UP IF YOU ARE GOING TO USE THE SCRIPT), as this is a personal project and it is intended to make my own installation more convenient. If you want to adapt this rice for your own needs, install manually using the provided files, and do as you wish. Proceed at your own caution.
+
+Paths:
+init --> ~/.config/river/init 
+foot.ini --> ~/.config/foot/foot.ini 
+style.css --> ~/.config/waybar/style.css 
+config.jsonc --> ~/.config/waybar/config.jsonc
+android_notification-pink_edit.rasi --> /usr/share/rofi/themes/android_notification-pink_edit.rasi 
+lainwallpaper.jpg --> ~/Pictures/wallpapers/ (or wherever you keep your wallpapers)
+
+Note the wallpaper path. I have it set to ~/Pictures/wallpapers/, but you may have a different wallpaper path. Adjust the swaybg line in init according to this. 
+
+River init contains some "extra" settings for Bluetooth, screenshots using grimshot, and screensharing that are important for my setup, but may not be for yours. Comment them out or leave them in according to your own need. If you have your own keybinds and don't want to change anything except for your visuals, instead of copying or symlinking, look for the comments with [RICE] in init, and add these parts to your own configuration.

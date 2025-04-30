@@ -1,0 +1,250 @@
+* {
+    font-family: "BlockZone", FontAwesome, monospace;
+    font-size: 14px;
+}
+
+window#waybar {
+    background-color: #0e0e0e;
+    border-bottom: 4px solid #0e0e0e;
+    color: #0e0e0e;
+}
+
+window#waybar.hidden {
+    opacity: 0.2;
+}
+
+button {
+    box-shadow: inset 0 -4px transparent;
+    border: none;
+    border-radius: 0;
+}
+
+button:hover {
+    background: inherit;
+    box-shadow: inset 0 -4px #000000;
+}
+
+/* Combined workspace styling as one container */
+#tags {
+    background-color: #0e0e0e;
+    border: 4px solid #474747;
+    margin: 2px;
+    padding: 0;
+}
+
+#tags button {
+    padding: 0 5px;
+    background-color: #0e0e0e;
+    color: #C06A7E;
+    margin: 0;
+    border: none;
+}
+
+/* Remove right border from last workspace button */
+#tags button:last-child {
+    border-right: none;
+}
+
+#tags button:hover {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+#tags button.focused {
+    background-color: #C06A7E;
+    color: #0e0e0e;
+}
+
+#tags button.urgent {
+    background-color: #cc3652;
+    color: #0e0e0e;
+}
+
+#mode {
+    background-color: #0e0e0e;
+    color: #C06A7E;
+    border: 4px solid #474747;
+}
+
+/* Base styles for all modules */
+#clock,
+#battery,
+#cpu,
+#memory,
+#disk,
+#temperature,
+#backlight,
+#network,
+#pulseaudio,
+#wireplumber,
+#custom-media,
+#tray,
+#mode,
+#idle_inhibitor,
+#scratchpad,
+#mpd {
+    padding: 0 10px;
+    margin: 0 2px;
+    color: #C06A7E;
+    background-color: #0e0e0e;
+    border: 4px solid #474747;
+}
+
+#window,
+#workspaces {
+    margin: 0 4px;
+}
+
+.modules-left > widget:first-child > #workspaces {
+    margin-left: 0;
+}
+
+.modules-right > widget:last-child > #workspaces {
+    margin-right: 0;
+}
+
+#clock {
+    background-color: #0e0e0e;
+    color: #C06A7E;
+    border: 4px solid #474747;
+    font-weight: bold;
+}
+
+#battery {
+    background-color: #0e0e0e;
+    color: #C06A7E;
+}
+
+#battery.charging, #battery.plugged {
+    color: #0e0e0e;
+    background-color: #e6d5a9;
+}
+
+@keyframes blink {
+    to {
+        background-color: #e6d5a9;
+        color: #0e0e0e;
+    }
+}
+
+#battery.critical:not(.charging) {
+    background-color: #cc3652;
+    color: #0e0e0e;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: steps(8);
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#cpu {
+    background-color: #0e0e0e;
+    color: #C06A7E;
+}
+
+#memory {
+    background-color: #0e0e0e;
+    color: #C06A7E;
+}
+
+#disk {
+    background-color: #0e0e0e;
+    color: #C06A7E;
+}
+
+#backlight {
+    background-color: #0e0e0e;
+    color: #C06A7E;
+}
+
+#network {
+    background-color: #0e0e0e;
+    color: #C06A7E;
+}
+
+#network.disconnected {
+    background-color: #cc3652;
+    color: #0e0e0e;
+}
+
+#pulseaudio {
+    background-color: #0e0e0e;
+    color: #C06A7E;
+}
+
+#pulseaudio.muted {
+    background-color: #3f3f3f;
+    color: #7f7f7f;
+}
+
+#temperature {
+    background-color: #0e0e0e;
+    color: #C06A7E;
+}
+
+#temperature.critical {
+    background-color: #cc3652;
+    color: #0e0e0e;
+}
+
+#tray {
+    background-color: #0e0e0e;
+    color: #C06A7E;
+}
+
+#idle_inhibitor {
+    background-color: #0e0e0e;
+    color: #7f7f7f;
+}
+
+#idle_inhibitor.activated {
+    background-color: #C06A7E;
+    color: #0e0e0e;
+}
+
+#language {
+    background: #0e0e0e;
+    color: #C06A7E;
+    padding: 0 5px;
+    margin: 0 5px;
+    min-width: 16px;
+    border: 4px solid #474747;
+}
+
+#keyboard-state {
+    background: #0e0e0e;
+    color: #C06A7E;
+    padding: 0 0px;
+    margin: 0 5px;
+    min-width: 16px;
+    border: 4px solid #474747;
+}
+
+#keyboard-state > label {
+    padding: 0 5px;
+}
+
+#keyboard-state > label.locked {
+    background: rgba(255, 158, 180, 0.2);
+}
+
+#privacy-item {
+    padding: 0 5px;
+    color: #0e0e0e;
+    border: 4px solid #474747;
+}
+
+#privacy-item.screenshare {
+    background-color: #cc3652;
+    color: #0e0e0e;
+}
+
+#privacy-item.audio-in {
+    background-color: #C06A7E;
+    color: #0e0e0e;
+}
+
+#privacy-item.audio-out {
+    background-color: #e6d5a9;
+    color: #0e0e0e;
+}
+
